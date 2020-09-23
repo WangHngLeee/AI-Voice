@@ -1,5 +1,5 @@
 import React, {useState, useEffect, createRef} from 'react'
-import {Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
+import {Card, CardActions, CardActionArea, CardContent, CardMedia, Typography } from '@material-ui/core';
 import useStyles from './styles.js'
 import classNames from 'classnames';
 import { useBouncyShadowStyles } from '@mui-treasury/styles/shadow/bouncy';

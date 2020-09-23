@@ -1,11 +1,10 @@
 
 import React from 'react';
-import { Grid, Grow, Typography } from '@material-ui/core';
+import { Grid, Grow } from '@material-ui/core';
 import NewsCard from '../NewsCard/NewsCard';
 import useStyles from './styles.js';
 import '../style.css';
 import StyleCard from '../StyleCard/StyleCard';
-import StyleNewCard from '../StyleNewCard/StyleNewCard';
 
 const infoCards = [
   { color: '#00838f', url : "https://file03.16sucai.com/2017/1100/16sucai_v567c127_6ec.JPG", title: 'Latest', text: 'The latest news', info: "Try to say something like this : ' Give me the latest news ! ' " },
