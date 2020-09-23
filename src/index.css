@@ -1,9 +1,12 @@
-#root, html, body{
-    height: 100vh;
+
+#root,html{
+    height: 100%;
+    background-color: rgb(82,174,194);
+
 }
+
 body{
     margin: 0;
-    background-color: whitesmoke;
 }
 
 * {

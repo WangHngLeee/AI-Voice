@@ -16,6 +16,12 @@ export default makeStyles((theme) => ({
       display: 'none',
     },
   },
+  header:{
+    textAlign:'center',
+    alignItems:'center',
+    fontSize:50,
+    color: 'white'
+  },
   link: {
     textDecoration: 'none',
     color: 'rgba(21, 101, 192)',

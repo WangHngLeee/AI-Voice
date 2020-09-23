@@ -16,8 +16,13 @@ export default makeStyles({
         height: '45vh',
         padding: '10%',
         borderRadius: 14,
-        color: 'white'
+        color: 'white',
+        '&:hover':{
+            transform: 'scale(1.1)',
+            transition: 'all .4s ease-out'
+        }
     },
+
     infoCard:{
         display: 'flex',
         flexDirection: 'column',
