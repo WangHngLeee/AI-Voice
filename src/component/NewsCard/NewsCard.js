@@ -2,11 +2,15 @@ import React, {useState, useEffect, createRef} from 'react'
 import {Card, CardActions, CardActionArea, CardContent, CardMedia, Button, Typography } from '@material-ui/core';
 import useStyles from './styles.js'
 import classNames from 'classnames';
+import { useBouncyShadowStyles } from '@mui-treasury/styles/shadow/bouncy';
+import cx from 'clsx';
+import FlexyTag from '../FlexyTag/FlexyTag';
 
 const NewsCard = ({article:{ description, publishedAt, source, title, url, urlToImage}, i, activeArticle }) => {
     const classes = useStyles();
     const [elRefs, setElrefs] = useState([]);
     const scrollToRef = (ref) => window.scroll(0,ref.current.offsetTop - 50);
+    const shadowStyles = useBouncyShadowStyles();
 
     useEffect(() => {
         setElrefs((refs) => Array(20).fill().map((_, j) => refs[j] || createRef()));
@@ -19,7 +23,7 @@ const NewsCard = ({article:{ description, publishedAt, source, title, url, urlTo
     }, [i, activeArticle, elRefs]);
 
     return (
-        <Card ref={elRefs[i]} className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
+        <Card ref={elRefs[i]} className={classNames(classes.card, cx(classes.card, shadowStyles.root), activeArticle === i ? classes.activeCard : null)}>
             <CardActionArea href={url} target="_blank">
                 <CardMedia className={classes.media} image={urlToImage || 'https://st.depositphotos.com/1152339/1972/i/950/depositphotos_19723583-stock-photo-news-concept-news-on-digital.jpg'}/>
                 <div className={classes.details}>
@@ -32,7 +36,7 @@ const NewsCard = ({article:{ description, publishedAt, source, title, url, urlTo
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardActions}>
-                <Button size="small" color="primary">Learn More</Button>
+                <FlexyTag >Learn More</FlexyTag>
                 <Typography variant="h5" color="textSecondary">{i + 1}</Typography>
             </CardActions>
         </Card>

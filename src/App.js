@@ -35,7 +35,7 @@ const App = () =>{
     return (
         <div>
             <div className={classes.logoContainer}>
-                <img className={classes.alanLogo}src="https://hrasiamedia.com/2017/wp-content/uploads/2019/04/20190402-HRAsia-Magazine-Website-AI-to-Complement-HR-Image.jpg" alt="alan logo"/>
+                <img className={classes.alanLogo}src="https://cdn.dribbble.com/users/2027253/screenshots/7528368/media/e003ab69bedc9b8970655299808729e6.jpg" alt="alan logo"/>
             </div>
             <NewsCards articles={newsArticles} activeArticle={activeArticle}/>
         </div>
