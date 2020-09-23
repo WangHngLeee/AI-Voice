@@ -19,7 +19,7 @@ const NewsCard = ({article:{ description, publishedAt, source, title, url, urlTo
     }, [i, activeArticle, elRefs]);
 
     return (
-        <Card className="card" ref={elRefs[i]} className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
+        <Card ref={elRefs[i]} className={classNames(classes.card, activeArticle === i ? classes.activeCard : null)}>
             <CardActionArea href={url} target="_blank">
                 <CardMedia className={classes.media} image={urlToImage || 'https://st.depositphotos.com/1152339/1972/i/950/depositphotos_19723583-stock-photo-news-concept-news-on-digital.jpg'}/>
                 <div className={classes.details}>
