@@ -8,9 +8,9 @@ import StyleCard from '../StyleCard/StyleCard';
 
 const infoCards = [
   { color: '#00838f', url : "https://file03.16sucai.com/2017/1100/16sucai_v567c127_6ec.JPG", title: 'Latest', text: 'The latest news', info: "Try to say something like this : ' Give me the latest news ! ' " },
-  { color: '#1565c0', url: "https://picnew13.photophoto.cn/20190310/zisejianyuebianpinghuajianbianguanggaobeijing-33121883_1.jpg", title: 'By Categories', info: "Try any categories like Sport. Just say : 'Give me the latest xxx news ", text: 'News by category' },
-  { color: '#4527a0', url: "https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-purple-geometric-flat-texture-poster-background-image_210018.jpg", title: 'By Terms', info: "Try any temrs like Trump. Just say : ' What's up with xxx ? '", text: 'Search Terms' },
-  { color: '#283593', url: "https://www.newswhip.com/wp-content/uploads/2016/06/Images-for-first-page-articles-57-1080x675.jpg", title: 'By Sources', info: "Try any brand like CNN. Just say : ' Give me the latest xxx news '", text: 'Brand News' },
+  { color: '#1565c0', url: "https://picnew13.photophoto.cn/20190310/zisejianyuebianpinghuajianbianguanggaobeijing-33121883_1.jpg", title: 'By Categories', info: "Try any categories like Sport. Just say : 'Tell me the news about xxx ", text: 'News by category' },
+  { color: '#4527a0', url: "https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-purple-geometric-flat-texture-poster-background-image_210018.jpg", title: 'By Terms', info: "Try any temrs like Trump. Just say : ' Show me the news about xxx? '", text: 'Search Terms' },
+  { color: '#283593', url: "https://www.newswhip.com/wp-content/uploads/2016/06/Images-for-first-page-articles-57-1080x675.jpg", title: 'By Sources', info: "Try any brand like CNN. Just say : ' Tell me the news from xxx '", text: 'Brand News' },
 ];
 
 const NewsCards = ({ articles, activeArticle }) => {
