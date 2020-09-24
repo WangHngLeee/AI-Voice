@@ -6,7 +6,8 @@
 </p> 
 </center>
 
-# 🤖️ An News Web Application based on AI voice identify with React
+# 🤖️ AI Voice 
+## A News Web Application based on AI voice identify with React
 ### Frontend : 🎉 React, Material UI
 ### Backend : 🤖️ Alan AI.
 - - -
