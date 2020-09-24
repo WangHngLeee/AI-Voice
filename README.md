@@ -28,5 +28,4 @@
 #### If you like this project remember to give me a star or follow my github!
 
 ## Contact
-#### 🔮   Personal Website : https://www.leeeinfo.com
 #### 📧   E-Mail: hongli9749@gmail.com
